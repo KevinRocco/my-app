@@ -14,6 +14,7 @@ const config = {
         }),
         paths: {
             base: dev ? "" : "/my-app",
+			relative: false
         },
     },
 };
