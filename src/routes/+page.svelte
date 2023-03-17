@@ -1,14 +1,14 @@
 
 <script>
-	import helloWordArr from './hello'
-	import Highlight from './components/Highlight.svelte';
+	import helloWordArr from '../commons/hello'
+	import Highlight from '../components/Highlight.svelte';
 
 	let helloWord = helloWordArr[Math.floor((Math.random() * helloWordArr.length))]
 </script>
 
 <main>
 	<h1><span>{helloWord},</span>我是Kevin Rocco.</h1>
-	<p>主流<Highlight icon="apple,h5" highlightClass="moegi">Java</Highlight>开发工程师，就职于<Highlight icon="didi" highlightClass="orange">Rocco's Life</Highlight>。</p>
+	<p>一只<Highlight icon="apple,h5" highlightClass="moegi">Java</Highlight>开发工程师，服务于<Highlight icon="didi" highlightClass="orange">Rocco's Life</Highlight>。</p>
 	<a href="https://github.com/KevinRocco">Github</a>
 	<a href="https://kevinrocco.github.io/my-app/">Blog</a>
 </main>
